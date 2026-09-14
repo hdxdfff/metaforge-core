@@ -8,10 +8,12 @@ Completed:
 - Added license, contribution, security, ignore rules, tests, and CI.
 - Passed source compilation, five unit tests, CLI demonstration, wheel build,
   API route construction, and a basic no-content secret-pattern scan.
+- Repeated compilation, tests, basic scan, and Git integrity verification in a
+  fresh local clone.
 
 Remaining:
 
-- Run a final secret scan and clean-clone validation.
+- Run a deeper final secret scan selected by the release maintainer.
 - Create and publish a public GitHub repository after maintainer review.
 
 Current issue:

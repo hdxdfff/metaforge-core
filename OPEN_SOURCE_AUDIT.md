@@ -17,7 +17,14 @@
 
 ## Release gate still required
 
-1. Run a repository secret scan in a clean clone.
+1. Run a deeper secret scan with the release maintainer's chosen scanner.
 2. Verify CI on the target GitHub repository.
 3. Review the public README and project name with the maintainer.
 4. Create the public remote only after those checks pass.
+
+## Local verification completed
+
+A fresh local clone of the candidate compiled successfully, ran all five unit
+tests, passed the same basic pattern scan, and completed `git fsck --full`
+without errors. This is not a substitute for a dedicated secret scanner or
+GitHub-hosted CI.
