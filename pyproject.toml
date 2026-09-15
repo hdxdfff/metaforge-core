@@ -22,6 +22,9 @@ dependencies = [
   "uvicorn[standard]>=0.30,<1",
 ]
 
+[project.optional-dependencies]
+test = ["httpx>=0.27,<1"]
+
 [project.scripts]
 metaforge = "metaforge_core.cli:main"
 

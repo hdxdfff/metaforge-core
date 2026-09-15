@@ -28,3 +28,8 @@ A fresh local clone of the candidate compiled successfully, ran all five unit
 tests, passed the same basic pattern scan, and completed `git fsck --full`
 without errors. This is not a substitute for a dedicated secret scanner or
 GitHub-hosted CI.
+
+The final local pass also scanned every tracked file and every reachable Git
+commit for common cloud/API token, private-key, credential-file, and
+high-risk assignment patterns. It reported no findings without printing file
+contents.
